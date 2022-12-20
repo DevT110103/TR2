@@ -1,0 +1,31 @@
+<div id="contact-fixed">
+    <a href="#" class="wrapper-control-nav phone">
+        <img src="../images/icons/i-7.png" alt="">
+    </a>
+
+    <a href="#" class="wrapper-control-nav zalo">
+        <img src="../images/icons/i-6.png" alt="">
+    </a>
+
+    <a href="#" class="wrapper-control-nav gmail">
+        <img src="../images/icons/i-8.png" alt="">
+    </a>
+
+    <button class="wrapper-control-nav top">
+        <img src="../images/icons/i-9.png" alt="">
+    </button>
+</div>
+
+<script>
+    $(document).ready(function () {
+        const offset = 500;
+        const duration = 750;
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > offset) $('#contact-fixed').fadeIn(duration);
+            else $('#contact-fixed').fadeOut(duration);
+        });
+        $('#contact-fixed .wrapper-control-nav.top').click(function () {
+            $('body,html').animate({ scrollTop: 0 }, duration);
+        });
+    });
+</script>

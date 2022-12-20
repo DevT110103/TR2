@@ -1,0 +1,293 @@
+#implementation-project {
+  margin-bottom: 64px;
+}
+#implementation-project .ls-breadcrumbs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  margin-bottom: 46px;
+  background: #f3f3f3;
+}
+#implementation-project .ls-breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+  padding: 13px 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+#implementation-project .ls-breadcrumbs ul li {
+  position: relative;
+}
+#implementation-project .ls-breadcrumbs ul li:not(:last-child) {
+  padding-right: 24px;
+}
+#implementation-project .ls-breadcrumbs ul li:not(:last-child)::after {
+  content: "\f105";
+  position: absolute;
+  font-size: 15px;
+  right: 8px;
+  top: 50%;
+  left: auto;
+  transform: translateY(-50%);
+  line-height: 17px;
+  color: #7a7a7a;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+#implementation-project .ls-breadcrumbs ul li a {
+  font-family: var(--cambria-normal);
+  font-size: 15px;
+  line-height: 17px;
+  color: #7a7a7a;
+  text-decoration: none;
+}
+#implementation-project .ls-breadcrumbs ul li a:hover {
+  color: #c5aa5f;
+}
+#implementation-project .wrapper-title-page .title-page {
+  font-family: "Rift";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: #411136;
+  margin-bottom: 4px;
+}
+@media (min-width: 768px) {
+  #implementation-project .wrapper-title-page .title-page {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+#implementation-project .wrapper-title-page .post-detail-content {
+  font-family: var(--cambria-normal);
+  font-size: calc(17px + var(--scale-font));
+  line-height: calc(24px + var(--scale-font));
+  margin-bottom: 15px;
+  color: #333333;
+}
+#implementation-project .wrapper-title-page .post-detail-content .more {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  transition: 0.5s;
+  position: relative;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #implementation-project .wrapper-title-page .post-detail-content .more {
+    font-size: 16px;
+  }
+}
+#implementation-project .wrapper-title-page .post-detail-content .more.more2 {
+  transition: 0.5s;
+}
+#implementation-project .wrapper-title-page .post-detail-content .more.more2::before {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.95) 60.29%, rgba(255, 255, 255, 0) 118.14%, rgba(255, 255, 255, 0.23951) 118.14%);
+}
+#implementation-project .wrapper-title-page .post-detail-content .more .morecontent {
+  transition: 0.5s;
+}
+#implementation-project .wrapper-title-page .post-detail-content .more .morecontent span {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  transition: 0.5s;
+  position: relative;
+  display: none;
+}
+@media (min-width: 768px) {
+  #implementation-project .wrapper-title-page .post-detail-content .more .morecontent span {
+    font-size: 16px;
+  }
+}
+#implementation-project .wrapper-title-page .post-detail-content .more .morelink {
+  margin: 0 auto;
+  position: relative;
+  margin-top: 14px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  padding: 8px 16px;
+  width: 110px;
+  background: #ffffff;
+  border: 1px solid #411136;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #implementation-project .wrapper-title-page .post-detail-content .more .morelink {
+    width: 129px;
+    font-size: 15px;
+    padding: 8px 18px;
+  }
+}
+#implementation-project .wrapper-title-page .post-detail-content .more .morelink.less {
+  padding: 8px 24px;
+}
+@media (max-width: 768px) {
+  #implementation-project .wrapper-title-page .post-detail-content .more .morelink.less {
+    padding: 8px 18px;
+  }
+}
+#implementation-project .wrapper-title-page .post-detail-content .more .morelink::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  bottom: 0px;
+  margin-left: 10px;
+  position: absolute;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-image: url(../../images/arrow-right.png);
+}
+#implementation-project .wrapper-title-page .post-detail-content .more .morelink:hover {
+  color: #c5aa5f;
+  border: 1px solid #c5aa5f;
+}
+#implementation-project .wrapper-title-page .post-detail-content .more .morelink:hover::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  bottom: 0px;
+  margin-left: 10px;
+  position: absolute;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-image: url(../../images/arrow-right-yellow.png);
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item {
+  transition: 0.5;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item:hover .implement-item-info {
+  border: 1px solid #c5aa5f;
+  background: transparent;
+  border-top: transparent;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item:hover .implement-item-info .implement-item-info-name {
+  color: #c5aa5f;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item:hover .implement-item-info .implement-item-info-detail .view-more {
+  color: #c5aa5f;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item:hover .implement-item-info .implement-item-info-detail .view-more .view-more-icon-black {
+  display: none;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item:hover .implement-item-info .implement-item-info-detail .view-more .view-more-icon-yellow {
+  display: inline-block;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-image {
+  width: 100%;
+  overflow: hidden;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-image > img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info {
+  border: 1px solid transparent;
+  background: #e7dfca;
+  padding: 20px 20px 13px;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info .implement-item-info-name {
+  font-family: "Google Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #411136;
+  cursor: pointer;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info .implement-item-info-description {
+  margin-top: 13px;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info .implement-item-info-description .description-implement-item {
+  display: flex;
+  justify-content: flex-start;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info .implement-item-info-description .description-implement-item > img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info .implement-item-info-detail {
+  margin-top: 13px;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info .implement-item-info-detail .view-more {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #411136;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info .implement-item-info-detail .view-more > img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info .implement-item-info-detail .view-more > img.view-more-icon-black {
+  display: inline-block;
+}
+#implementation-project .wrapper-content-implement-list .wrap-implementation-implement-item .implement-item-info .implement-item-info-detail .view-more > img.view-more-icon-yellow {
+  display: none;
+}
+#implementation-project .wrapper-content-implement-list .pagination {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+#implementation-project .wrapper-content-implement-list .pagination .page-item:hover .page-link-first {
+  background: #c5aa5f;
+  border-radius: 5px;
+  color: #fff;
+}
+#implementation-project .wrapper-content-implement-list .pagination .page-item:hover .page-link {
+  background: #c5aa5f;
+  border-radius: 5px;
+  color: #fff !important;
+}
+#implementation-project .wrapper-content-implement-list .pagination .page-item .page-link {
+  font-size: 16px;
+  min-width: 42px;
+  color: #333333;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 1px solid #c5aa5f;
+}
+@media (max-width: 768px) {
+  #implementation-project .wrapper-content-implement-list .pagination .page-item .page-link {
+    padding: 4px !important;
+    min-width: 24px;
+    font-size: 12px;
+  }
+}

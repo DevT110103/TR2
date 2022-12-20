@@ -1,0 +1,248 @@
+#analistis-list {
+  margin-bottom: 64px;
+  .ls-breadcrumbs {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    margin-bottom: 46px;
+    background: #f3f3f3;
+
+    ul {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      list-style-type: none;
+      padding: 13px 0;
+      width: max-content;
+
+      li {
+        position: relative;
+
+        &:not(:last-child) {
+          padding-right: 24px;
+
+          &::after {
+            content: "\f105";
+            position: absolute;
+            font-size: 15px;
+            right: 8px;
+            top: 50%;
+            left: auto;
+            transform: translateY(-50%);
+            line-height: 17px;
+            color: #7a7a7a;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+          }
+        }
+
+        a {
+          font-family: var(--cambria-normal);
+          font-size: 15px;
+          line-height: 17px;
+          color: #7a7a7a;
+          text-decoration: none;
+
+          &:hover {
+            color: #c5aa5f;
+          }
+        }
+      }
+    }
+  }
+  .wrapper-title-page {
+    .title-page {
+      font-family: "Rift";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 32px;
+      color: #411136;
+      margin-bottom: 13px;
+      @media (min-width: 768px) {
+        font-size: 50px;
+        line-height: 60px;
+      }
+    }
+    .post-detail-content {
+      font-family: var(--cambria-normal);
+      font-size: calc(17px + var(--scale-font));
+      line-height: calc(24px + var(--scale-font));
+      color: #333333;
+      margin-bottom: 15px;
+      .more {
+        font-family: "Google Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #000000;
+        transition: 0.5s;
+        position: relative;
+        text-align: justify;
+        @media (min-width: 768px) {
+          font-size: 16px;
+        }
+        &.more2 {
+          transition: 0.5s;
+          &::before {
+            content: "";
+            position: absolute;
+            height: 120px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(
+              360deg,
+              rgba(255, 255, 255, 0.95) 60.29%,
+              rgba(255, 255, 255, 0) 118.14%,
+              rgba(255, 255, 255, 0.23951) 118.14%
+            );
+          }
+        }
+        .morecontent {
+          transition: 0.5s;
+          span {
+            font-family: "Google Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #000000;
+            transition: 0.5s;
+            position: relative;
+            display: none;
+            @media (min-width: 768px) {
+              font-size: 16px;
+            }
+          }
+        }
+        .morelink {
+          margin: 0 auto;
+          position: relative;
+          margin-top: 14px;
+          display: block;
+          font-weight: 400;
+          font-size: 14px;
+          color: #000000;
+          text-align: center;
+          padding: 8px 16px;
+          width: 110px;
+          background: #ffffff;
+          border: 1px solid #411136;
+          text-align: left;
+          @media (min-width: 768px) {
+            width: 129px;
+            font-size: 15px;
+            padding: 8px 18px;
+          }
+          &.less {
+            @media (max-width: 768px) {
+              padding: 8px 18px;
+            }
+            padding: 8px 24px;
+          }
+          &::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            top: 12px;
+            bottom: 0px;
+            margin-left: 10px;
+            position: absolute;
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-image: url(../../images/arrow-right.png);
+          }
+          &:hover {
+            color: #c5aa5f;
+            border: 1px solid #c5aa5f;
+            &::after {
+              content: "";
+              width: 20px;
+              height: 20px;
+              top: 12px;
+              bottom: 0px;
+              margin-left: 10px;
+              position: absolute;
+              background-size: 14px;
+              background-repeat: no-repeat;
+              background-image: url(../../images/arrow-right-yellow.png);
+            }
+          }
+        }
+      }
+    }
+  }
+  .wrapper-content-analisis-list {
+    margin-top: 51px;
+    .wrap-analisis-item {
+      transition: 0.5s;
+      &:hover {
+        .analisis-item-info {
+          cursor: default;
+          border: 1px solid #c5aa5f;
+          border-top: none;
+          .analisis-item-info-name {
+            color: #c5aa5f;
+          }
+          .analisis-item-info-detail {
+            .view-more {
+              color: #c5aa5f;
+            }
+          }
+        }
+      }
+      .analisis-item-image {
+        width: 100%;
+        object-fit: contain;
+      }
+      .analisis-item-info {
+        border: 1px solid #cacaca;
+        border-top: none;
+        padding: 15px 25px 28px 21px;
+        .analisis-item-info-name {
+          font-family: "Google Sans Bold";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          color: #333333;
+        }
+        .analisis-item-info-description {
+          font-family: "Google Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          margin-top: 17px;
+          color: #000000;
+        }
+        .analisis-item-info-detail {
+          width: fit-content;
+          margin-top: 15px;
+          cursor: pointer;
+          .view-more {
+            font-family: "Google Sans";
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23px;
+            font-size: 15px;
+            color: #333333;
+            > img {
+              margin-bottom: 2px;
+              margin-left: 4px;
+              width: 12px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}

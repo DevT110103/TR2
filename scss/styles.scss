@@ -1,0 +1,118 @@
+@import "./fonts";
+@import "./animation";
+
+:root {
+  --scale-font: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5 !important;
+}
+
+body {
+  font-family: "Google Sans";
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  row-gap: 30px;
+}
+
+strong *,
+strong,
+b *,
+b {
+  font-family: "Google Sans Bold";
+}
+
+i *,
+i,
+em,
+em * {
+  font-family: "Google Sans Italic";
+}
+
+strong i,
+strong i *,
+i strong,
+i strong *,
+em strong,
+em strong *,
+strong em,
+strong em * {
+  font-family: "Google Sans Bold Italic";
+}
+
+.container {
+  max-width: 1200px;
+}
+
+button,
+input {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  word-break: break-word;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  word-break: break-word;
+}
+
+.hover-zoom {
+  overflow: hidden;
+
+  img {
+    transition: 0.5s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
+}
+
+@import "./page/analysis-list";
+@import "./page/analysis-detail";
+@import "./page/service-list";
+@import "./page/service-detail";
+@import "./page/implementation-project";
+@import "./page/project-detail";
+@import "./page/search";
+@import "./page/epap";
+
+@import "./component/header";
+@import "./component/nav-page";
+@import "./person-1";
+@import "./component/contact";
+@import "./component/footer";

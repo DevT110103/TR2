@@ -1,0 +1,39 @@
+#contact-fixed {
+  position: fixed;
+  top: 50%;
+  z-index: 100;
+  right: 30px;
+
+  .wrapper-control-nav {
+    display: flex;
+    background: #411136;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s linear;
+
+    &.phone {
+      background-color: #c2000b;
+    }
+
+    &.zalo {
+      background: #0c89be;
+    }
+
+    &.gmail {
+      background: #1560a5;
+    }
+
+    & + .wrapper-control-nav {
+      margin-top: 5px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+}
